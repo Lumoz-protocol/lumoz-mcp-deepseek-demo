@@ -5,6 +5,9 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
+  server: {
+    port: 10052
+  }
 }
 
 module.exports = nextConfig
