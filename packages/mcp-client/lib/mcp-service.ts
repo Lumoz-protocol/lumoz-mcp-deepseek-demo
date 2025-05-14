@@ -183,6 +183,7 @@ export async function sendMessage(message: string, history: any[] = []) {
 
       // 将工具结果发送回AI获取最终回复
       console.log("开始获取AI最终回复");
+      console.log(toolResults)
       const finalResponse = await aiClient.messages.create({
         model: config.ai.defaultModel,
         messages: [
